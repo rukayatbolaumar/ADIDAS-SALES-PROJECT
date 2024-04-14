@@ -1,5 +1,5 @@
 # ADIDAS 2021-SALES-PROJECT
-The Adidas sales dataset is a collection of data that includes information on the sales of Adidas products. This type of dataset may include details such as the number of units sold, the total sales revenue, the location of the sales, the type of product sold, and any other relevant information.
+The Adidas sales dataset is a collection of data that includes information on the sales of Adidas products. The dataset includes details such as the number of units sold, the total sales revenue, the location of the sales, the type of product sold, and any other relevant information.
 
 Each row represents an Invoice for a unique Retailer. The columns in the dataset are as follows:   
 Retailer,	Retailer ID,	Invoice, Date,	Region,	State	,City,	Product,	Price per Unit,	Units Sold,	Total Sales,	Operating Profit,	Operating Margin,	Sales Method.
@@ -11,10 +11,9 @@ I selected only data for the year 2021 for my analysis.
 I was able to perform the eploratory data analysis on the data using the .describe() function.
 
 ## VISUALIZATION and INSIGHTS
-I made visualizations to draw insights on the following information on the data.
 * Visual of the sales trend in year 2021: sales appear to trend downwards from the beginning of the year to the end.
 * Visual of the sales trend by month in 2021 showing month with highest and lowest sale :
-   ales increased slightly from the beginning of the year to March where its the lowest. July, August and December hold the highest sales
+   Sales increased slightly from the beginning of the year to March where its the lowest. July, August and December hold the highest sales
 * Correlation between price of a product and Number of products sold : The scatter plot shows a positive correlation between price and
   number of products sold. This means that as the price of the product increases, the number of products sold also tends to increase.
 * AVERAGE operating margin by retailer and Product: The average operating margin for apparel is higher than the average operating margin for footwear across all retailers.
