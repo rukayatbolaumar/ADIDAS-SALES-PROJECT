@@ -1,31 +1,27 @@
-# ADIDAS-SALES-PROJECT
-This dataset provides vending machine data from various locations in Central New Jersey, including a library, a mall, an office location, and a manufacturing site. 
-The locations encompass Gutten Plans, a frozen dough specialist company operating 24/5, with vending machine GuttenPlans x1367. Additionally, EB Public Library, experiencing high foot traffic 5-6 days a week, has vending machine EB Public Library x1380. Brunswick Sq Mall, with average foot traffic 7 days a week, hosts vending machines BSQ Mall x1364 (Zales) and BSQ Mall x1366 (ATT). Finally, Earle Asphalt, a construction engineering firm operating 5 days a week, features vending machine Earle Asphalt x1371. Data scientists can utilize this dataset to analyze trends, user behavior, and consumer preferences across different locations.
-I got the dataset from a goodle drive shared to access workable and tasking datasets.
+# ADIDAS 2021-SALES-PROJECT
+The Adidas sales dataset is a collection of data that includes information on the sales of Adidas products. This type of dataset may include details such as the number of units sold, the total sales revenue, the location of the sales, the type of product sold, and any other relevant information.
 
-## Data Cleaning
-I simply removed some rows irrelevant to the visualization of the data, there aren't so much null values which I was able to fill up the null values with the mode for Product with 6 null values and Category with 267,and I replaced the null values for the Mprice with the mean.
-Lastly I categorized some of the data in the columns for easy visualization cause of the duplicates present.
-
-## EDA
-I was able to perform the eploratory data analysis on the data using the .describe() function and was able to discover the  most purchased category of product.
-
-## VISUALIZATION
-I made visualizations to draw insights on the following information on the data.
-* Highest sold Category
-* Status with highest Option
-* Mode of Transaction
-* Location with highest sales
-* Machine with the highest Sales
+Each row represents an Invoice for a unique Retailer. The columns in the dataset are as follows:   
+Retailer,	Retailer ID,	Invoice, Date,	Region,	State	,City,	Product,	Price per Unit,	Units Sold,	Total Sales,	Operating Profit,	Operating Margin,	Sales Method.
   
-## INSIGHTS
-* Highest sold category is "FOOD" which implies that customers has more need for food than every other commodity
-* Status with highest option is "proceesed commodity" with the "unlinked commotity" with so insignificant value of 3
-* The most prefered mode of transaction by the customers is "cash" over "credit'"
-* "Guttenplans" is the location with the highest transaction and EB public library is close
-* Lastly the machine with the highest transaction is the "GuttenplansX1367"
+## Data Cleaning
+There were no null values, however most of the Numeric data needed for analysis were formated as Strings. These Columns were converted to the proper data type.  
+I selected only data for the year 2021 for my analysis. 
+## EDA
+I was able to perform the eploratory data analysis on the data using the .describe() function.
 
-## SUGGESTIONS
-* Commodity with highest demand should be made available always without default
-* Location with the highest transaction should be focused on for supply of commodity for customers
-* Lastly, the mode of transactions should be made available and the credit means should be encouraged for safety purpose.
+## VISUALIZATION and INSIGHTS
+I made visualizations to draw insights on the following information on the data.
+* Visual of the sales trend in year 2021: sales appear to trend downwards from the beginning of the year to the end.
+* Visual of the sales trend by month in 2021 showing month with highest and lowest sale :
+   ales increased slightly from the beginning of the year to March where its the lowest. July, August and December hold the highest sales
+* Correlation between price of a product and Number of products sold : The scatter plot shows a positive correlation between price and
+  number of products sold. This means that as the price of the product increases, the number of products sold also tends to increase.
+* AVERAGE operating margin by retailer and Product: The average operating margin for apparel is higher than the average operating margin for footwear across all retailers.
+  Amazon has the highest average operating margin for both men's and women's apparel while Sports Direct has the Lowest.
+  Foot Locker has the highest average operating margin for both men's athletic footwear and men's street footwear.
+* Bar Plot showing Operating Profit per State: There is a large disparity in operating profit between different states.
+  South Carolina has the highest while RHODE island has the smallest Operating PROFIT
+* Pie chart showing the percentage of unit sold per product type: Men’s street footwear is the most popular category while Men’s apparel is the least popular category.
+* Distribution of Sales by Region highlighting the sales method: Online sales appear to be the most frequent method across all regions.
+
